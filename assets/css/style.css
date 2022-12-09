@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Dosis';
+    src: url('../fonts/Dosis-Regular.ttf');
+}
+:root{
+    --blue-color: #3735c6;
+    --lightblue-color: #efefef;
+}
+
+* {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Dosis';
+    letter-spacing: 1px;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+
+/**** TOP NAVBAR ****/
+#navbar {
+    background-color: var(--blue-color);
+    box-shadow: 1px 1px 7px 1px #ccc;
+}
+#navbar .heading h1 {
+    line-height: 78px;
+    font-size: 45px;
+}
+
+
+/**** TABLE SECTION ****/
+main {
+    padding: 20px 0;
+}
+
+#member-table {
+    width: 85%;
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+#member-table .table thead tr,
+#member-table .table tbody tr:nth-child(even) {
+    background-color: var(--lightblue-color);
+}
+#member-table th {
+    text-align: center;
+}
+#member-table .btn {
+    margin-top: 20px;
+    background-color: var(--blue-color);
+    color: var(--lightblue-color);
+}
+
+#member-table input {
+    width: 60px;
+    background-color: transparent;
+    border: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/**** DASHBOARD SECTION ****/
+#charts .chart {
+    height: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #35c677;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+#charts h3 {
+    font-weight: bold;
+    color: black;
+}

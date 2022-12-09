@@ -42,7 +42,7 @@ btn.addEventListener("click", function(e) {
         count_result[element] = (count_result[element] || 0) + 1;
     });
     new Chart("b", {
-        type: "pie",
+        type: "bar",
         data: {
             labels: ["0-30", "31-60", "61-80", "81-100"],
             datasets: [{
@@ -54,9 +54,9 @@ btn.addEventListener("click", function(e) {
     });
 
     new Chart("result1", {
-        type: "bar",
+        type: "pie",
         data: {
-            labels: ["0-30", "31-60", "61-80", "81-100"],
+            labels: ["2", "3", "4", "5"],
             datasets: [{
                 label: 'Şagird sayı',
                 backgroundColor: ["#FF3924", "#FF9600", "#CDF03A", "#2CE574"],
